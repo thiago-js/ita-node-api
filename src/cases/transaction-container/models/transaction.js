@@ -12,6 +12,11 @@ const schema = new mongoose.Schema(
             required: true,
         },
 
+        accountName: {
+            type: String,
+            required: true,
+        },
+
         title: {
             type: String,
             required: true,

@@ -27,10 +27,15 @@ const createTransaction = async (req, res) => {
 }
 
 const verifyAccount = async (req, res) => {
+    const mappingNameAccount = async (req, response) => {
+        req.body.accountName = response.title
+    }
+
     try {
         const response = await accountModel.findById(req.body.accountid)
 
         if (response) {
+            await mappingNameAccount(req, response)
             await createTransaction(req, res)
         } else {
             res.status(400).send({ message: 'accountid invalido para a operação' })

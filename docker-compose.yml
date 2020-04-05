@@ -4,11 +4,15 @@ services:
     db:
         image: mongo
         restart: always
+        networks:
+            - default
         ports:
             - '27017:27017'
     api:
-        image: thiago-js/node-api
+        image: thiagojsimaome/ita-node-api:finalyVersion
         restart: always
+        networks:
+            - default
         depends_on:
             - db
         ports:

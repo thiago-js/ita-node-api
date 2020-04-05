@@ -1,12 +1,14 @@
 import bodyParser from 'body-parser'
-import { TransactionRouter } from '../src/cases/transaction-container/'
+import morgan from 'morgan'
 
+import { TransactionRouter } from '../src/cases/transaction-container/'
 import { UserRouter, UserNoAuthRouter } from '../src/cases/user-container/'
 import { CategoryRouter } from '../src/cases/category-container/'
 import { AccountRouter } from '../src/cases/account-container/'
 import { verifyToken } from '../src/shared/middleware/auth'
 
 const globalConfiguration = app => {
+    app.use(morgan('dev'))
     app.set('json spaces', 4)
     app.use(bodyParser.json())
     app.use(bodyParser.urlencoded({ extended: true }))
