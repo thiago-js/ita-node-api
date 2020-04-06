@@ -38,7 +38,7 @@ Basic crud with nodejs and mongo db
 ## Start
 
 ```
-npm start || yarn start
+"Make up" to up the list of services
 ```
 
 ## Comands
