@@ -9,7 +9,7 @@ services:
         ports:
             - '27017:27017'
     api:
-        image: thiagojsimaome/ita-node-api:finalyVersion
+        image: thiagojsimaome/ita-node-api:latest
         restart: always
         networks:
             - default
@@ -17,6 +17,6 @@ services:
             - db
         ports:
             - '3000:3000'
-        command: yarn dev
+        command: npm run dev
         volumes:
             - .:/usr/app

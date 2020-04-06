@@ -1,6 +1,5 @@
 import bodyParser from 'body-parser'
 import morgan from 'morgan'
-
 import { TransactionRouter } from '../src/cases/transaction-container/'
 import { UserRouter, UserNoAuthRouter } from '../src/cases/user-container/'
 import { CategoryRouter } from '../src/cases/category-container/'
