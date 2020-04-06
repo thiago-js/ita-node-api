@@ -38,7 +38,7 @@ Basic crud with nodejs and mongo db
 ## Start
 
 ```
-"Make up" to up the list of services
+Make up
 ```
 
 ## Comands
