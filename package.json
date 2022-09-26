@@ -15,7 +15,7 @@
         "mongoose": "^5.8.7",
         "morgan": "^1.10.0",
         "nodemon": "^2.0.2",
-        "pm2": "^4.2.1",
+        "pm2": "^5.2.0",
         "prettier": "^2.0.2"
     },
     "private": true
